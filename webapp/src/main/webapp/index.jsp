@@ -1,26 +1,18 @@
+ button to open the popup form -->
+ <button class="open-button" onclick="openForm()">Open Form</button>
 
-n="action_page.php">
-  <div class="container">
-	  	      <h1>Register</h1>
-		      	          <p>Please fill in this form to create an account.</p>
-				  		      <hr>
+ <!-- The form -->
+ <div class="form-popup" id="myForm">
+	   <form action="/action_page.php" class="form-container">
+		       <h1>Login</h1>
 
-						      		          <label for="email"><b>Email</b></label>
-									  			      <input type="text" placeholder="Enter Email" name="email" id="email" required>
+		           <label for="email"><b>Email</b></label>
+			       <input type="text" placeholder="Enter Email" name="email" required>
 
-												      			          <label for="psw"><b>Password</b></label>
-																  				      <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+			           <label for="psw"><b>Password</b></label>
+				       <input type="password" placeholder="Enter Password" name="psw" required>
 
-																				      				          <label for="psw-repeat"><b>Repeat Password</b></label>
-																									  					      <input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" required>
-																														      					          <hr>
-
-																																				  						      <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
-																																										      						          <button type="submit" class="registerbtn">Register</button>
-																																																	  							    </div>
-
-																																																								    							      <div class="container signin">
-																																																																      								          <p>Already have an account? <a href="#">Sign in</a>.</p>
-																																																																									  									    </div>
-																																																																																		    									    </form>
-
+				           <button type="submit" class="btn">Login</button>
+					       <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+					         </form>
+ </div>
